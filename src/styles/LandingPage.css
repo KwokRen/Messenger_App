@@ -1,11 +1,18 @@
+.landingPage {
+    margin-top: 15%;
+}
+
 .landingMsg {
     color: white;
+    font-size: 25px;
+    margin-bottom: 1.5rem;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
 .button {
     display: flex;
     flex-direction: column;
@@ -13,8 +20,21 @@ a {
     width: 100%;
 }
 
-.button > button {
+#button1{
+    background-color: #ff7300;
+    color: #fff;
+    padding: 1rem 8.8rem 1rem 8.8rem;
+    border: none;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
+}
+
+#button2{
+    background-color: #fff;
+    color:  black;
+    padding: 1rem 7.5rem 1rem 7.5rem;
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .buttonContainer {

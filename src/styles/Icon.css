@@ -5,4 +5,9 @@
 .icon > .svg-inline--fa {
     height: 100px;
     width: 100px;
+    padding-top: 3rem;
+}
+
+h1 {
+    margin: 0 auto;
 }

@@ -16,8 +16,8 @@ const LandingPage = () => {
            <h1 className="landingMsg">Connect with artists worldwide</h1>
            <div className="buttonContainer">
             <div className="button">
-                <Link to="/register"><Button>Create an Account</Button></Link>
-                <Button>I already have an account</Button>
+                <Link to="/register"><Button id="button1">Create an Account</Button></Link>
+                <Button id="button2">I already have an account</Button>
             </div>
            </div>
         </div>
