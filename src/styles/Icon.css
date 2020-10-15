@@ -1,0 +1,8 @@
+.icon {
+    color: green;
+}
+
+.icon > .svg-inline--fa {
+    height: 100px;
+    width: 100px;
+}
