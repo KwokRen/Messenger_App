@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import '../styles/Register.css'
 
 class Register extends React.Component {
     constructor(props) {

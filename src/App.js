@@ -19,8 +19,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Icon><Link to="/"> </Link></Icon>
         <BrowserRouter>
+        <div class="icon-container">
+          <Link to="/"><Icon /></Link>
+        </div>
           <Switch>
             <Route path="/register">
               <Register />
