@@ -1,17 +1,47 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+
 // import logo from './logo.svg';
-import './App.css';
 import Icon from './components/Icon'
-import LandingPage from './components/LandingPage'
+import LandingPage from './screens/LandingPage'
+import Register from './screens/Register';
 
+import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Icon />
-      <LandingPage />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Icon><Link to="/"> </Link></Icon>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/">
+              <LandingPage />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Icon />
+//       <LandingPage />
+//     </div>
+//   );
+// }
 
 export default App;
