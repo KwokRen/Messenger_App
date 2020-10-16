@@ -2,6 +2,7 @@ import React from 'react'
 // import Navbar from 'react-bootstrap/Navbar';
 import Icon from '../components/Icon'
 import {getMessages, login} from '../services'
+import Api from '../services/apiConfig';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -12,15 +13,21 @@ class NavBar extends React.Component {
         }
     }
 
-    // componentDidMount = () => {
-    //     this.populate()
-    // }
+    componentDidMount = () => {
+        this.getUserProfile();
+    }
 
-    // populate = async() => {
-    //     this.setState({
-    //         username: 
-    //     })
-    // }
+    getUserProfile = async () => {
+       try {
+           const resp = await Api.get('cloud_msg/UserProfiles/');
+           if (resp.status === 200) {
+                const userProfile = resp.data.results.find(UserProfile => UserProfile.user === this.props.user);
+                this.setState({icon: userProfile.avatar})
+           }
+       } catch (error) {
+           throw error;
+       }
+    }
 
     render() {
         return (
