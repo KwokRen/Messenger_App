@@ -7,7 +7,7 @@ import LogoText from './components/Logo-Text'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
 import Login from './screens/Login'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 
 import './App.css';
 
