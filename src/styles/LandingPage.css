@@ -1,5 +1,10 @@
 .landingPage {
     margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .landingMsg {
@@ -11,34 +16,43 @@
 a {
     text-decoration: none;
     color: white;
+    width: 80%;
 }
 
 .button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    min-width: 70%;
 }
 
 #button1{
     background-color: #ff7300;
     color: #fff;
-    padding: 1rem 8.8rem 1rem 8.8rem;
+    /* padding: 1rem 8rem 1rem 8rem; */
+    height: 3rem;
+    width: 100%;
     border: none;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 #button2{
     background-color: #fff;
     color:  black;
-    padding: 1rem 7.5rem 1rem 7.5rem;
+    height: 3rem;
+    width: 100%;
+    /* padding: 1rem 7.5rem 1rem 7.5rem; */
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .buttonContainer {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }

@@ -3,8 +3,10 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 
 // import logo from './logo.svg';
 import Icon from './components/Icon'
+import LogoText from './components/Logo-Text'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
+import Navbar from './components/Navbar'
 
 import './App.css';
 
@@ -19,19 +21,24 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
-        <div class="icon-container">
-          <Link to="/"><Icon /></Link>
+        <div class="view-container">
+          <BrowserRouter>
+          <div class="icon-container">
+            <Link to="/">
+              <Icon />
+              <LogoText />
+            </Link>
+          </div>
+            <Switch>
+              <Route path="/register">
+                <Register />
+              </Route>
+              <Route path="/">
+                <LandingPage />
+              </Route>
+            </Switch>
+          </BrowserRouter>
         </div>
-          <Switch>
-            <Route path="/register">
-              <Register />
-            </Route>
-            <Route path="/">
-              <LandingPage />
-            </Route>
-          </Switch>
-        </BrowserRouter>
       </div>
     );
   }
