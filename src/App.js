@@ -22,9 +22,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div class="view-container">
+        <div className="view-container">
           <BrowserRouter>
-          <div class="icon-container">
+          <div className="icon-container">
             <Link to="/">
               <Icon />
               <LogoText />
