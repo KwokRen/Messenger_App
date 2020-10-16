@@ -23,6 +23,7 @@ export const login = async (userData) => {
         if (resp.status === 200) {
             await clearHeader();
             await localStorage.setItem('token', resp.data.token);
+            await localStorage.setItem('user', resp.data.username);
             await changeHeader();
         }
         return resp;
