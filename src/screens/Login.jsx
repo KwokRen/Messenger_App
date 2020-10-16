@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import { login, getMessages } from '../services/index'
+import {Link} from 'react-router-dom'
 
 class Login extends React.Component {
     constructor(props) {
@@ -34,7 +35,7 @@ class Login extends React.Component {
             <form className='login'>
                 <input type='text' name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
                 <input type='password' name='password' placeholder='Password' value={this.state.password} onChange={this.handleChange}/>
-                <Button id="button" onClick={this.handleLogin}>Login</Button>
+                <Link to="/messages"><Button id="button" onClick={this.handleLogin}>Login</Button></Link>
             </form>
         )
     }

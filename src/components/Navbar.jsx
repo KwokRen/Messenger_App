@@ -6,7 +6,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: 
+            username: 'Jordan'
         }
     }
 
@@ -14,6 +14,7 @@ class NavBar extends React.Component {
         return (
             <div className="navbar">
                 <Icon />
+                <div>{this.state.username}</div>
                 <div className="logout">Logout</div>
             </div>
         )

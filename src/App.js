@@ -8,6 +8,7 @@ import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
 import Login from './screens/Login'
 import Navbar from './components/Navbar'
+import Messages from './screens/Messages'
 
 import './App.css';
 
@@ -15,7 +16,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      
     }
   }
 
@@ -37,6 +38,9 @@ class App extends React.Component {
               </Route>
               <Route path="/login">
                 <Login />
+              </Route>
+              <Route path="/messages">
+                <Messages />
               </Route>
               <Route path="/">
                 <LandingPage />
