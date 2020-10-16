@@ -2,6 +2,7 @@ import React from 'react'
 // import Navbar from 'react-bootstrap/Navbar';
 import Icon from '../components/Icon'
 import {getMessages, login} from '../services'
+import '../styles/Navbar.css'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -27,8 +28,8 @@ class NavBar extends React.Component {
         return (
             <div className="navbar">
                 <Icon />
-                <div>{this.state.username}</div>
-                <div><img src={this.state.icon} alt="test"/></div>
+                <div className="username">{this.state.username}</div>
+                <div ><img className="avatar" src={this.state.icon} alt="test"/></div>
                 <div className="logout">Logout</div>
             </div>
         )

@@ -1,11 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import { login, getMessages } from '../services/index'
-<<<<<<< HEAD
-import '../styles/Login.css'
-=======
 import {Link} from 'react-router-dom'
->>>>>>> a4b4440c9ad2058a073c0c72a43afe45899f6a79
+import '../styles/Login.css'
 
 class Login extends React.Component {
     constructor(props) {
@@ -37,9 +34,11 @@ class Login extends React.Component {
     render() {
         return(
             <form className='login'>
+                <div className="loginInput">
                 <input type='text' name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
                 <input type='password' name='password' placeholder='Password' value={this.state.password} onChange={this.handleChange}/>
                 <Link to="/messages"><Button id="button" onClick={this.handleLogin}>Login</Button></Link>
+                </div>
             </form>
         )
     }
