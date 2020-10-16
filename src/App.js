@@ -6,6 +6,7 @@ import Icon from './components/Icon'
 import LogoText from './components/Logo-Text'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
+import Login from './screens/Login'
 import Navbar from './components/Navbar'
 
 import './App.css';
@@ -32,6 +33,9 @@ class App extends React.Component {
             <Switch>
               <Route path="/register">
                 <Register />
+              </Route>
+              <Route path="/login">
+                <Login />
               </Route>
               <Route path="/">
                 <LandingPage />
