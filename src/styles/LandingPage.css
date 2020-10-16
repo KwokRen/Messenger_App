@@ -16,25 +16,28 @@
 a {
     text-decoration: none;
     color: white;
-    width: 80%;
+    width: 70%;
 }
 
 .button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 70%;
+    width: 100%;
 }
 
 #button1{
     background-color: #ff7300;
     color: #fff;
-    padding: 1rem 8.8rem 1rem 8.8rem;
+    /* padding: 1rem 8.8rem 1rem 8.8rem; */
+    height: 3rem;
+    width: 100%;
     padding: auto;
     border: none;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     cursor: pointer;
+    width: 100%;
 }
 
 #button2{
@@ -49,59 +52,35 @@ a {
 }
 
 .buttonContainer {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 @media (max-width: 450px) {
-    #button1 {
+    /* #button1 {
         padding: 1rem 6.7rem 1rem 6.7rem;
     } 
 
     #button2 {
         padding: 1rem 5.5rem 1rem 5.5rem;
-    } 
+    }  */
 }
 
 @media (max-width: 375px) {
     .landingMsg {
-        font-size: 19px;
+        font-size: 20px;
     }
-
-    #button1 {
-        padding: 1rem 4.7rem 1rem 4.7rem;
-    } 
-
-    #button2 {
-        padding: 1rem 3.5rem 1rem 3.5rem;
-    } 
 }
 
-@media (max-width: 354px) {
+/* @media (max-width: 354px) {
     .landingMsg {
         font-size: 20px;
     }
+} */
 
-    #button1 {
-        padding: 1rem 4.7rem 1rem 4.7rem;
-    } 
-
-    #button2 {
-        padding: 1rem 3.5rem 1rem 3.5rem;
-    } 
-}
-
-@media (max-width: 290px) {
+/* @media (max-width: 290px) {
     .landingMsg {
         font-size: 15px;
     }
-
-    #button1 {
-        padding: 1rem 2.7rem 1rem 2.7rem;
-    } 
-
-    #button2 {
-        padding: 1rem 1.5rem 1rem 1.5rem;
-    } 
-}
+} */
