@@ -16,14 +16,18 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      username: ''
     }
+  }
+
+  setUser = (username) => {
+    this.setState({username: username})
   }
 
   render() {
     return (
       <div className="App">
-        <Navbar />
+        {this.state.username && (<Navbar user={this.state.username}/>)}
         <div className="view-container">
           <BrowserRouter>
           <div className="icon-container">
@@ -37,7 +41,7 @@ class App extends React.Component {
                 <Register />
               </Route>
               <Route path="/login">
-                <Login />
+                <Login setUser={this.setUser} />
               </Route>
               <Route path="/messages">
                 <Messages />

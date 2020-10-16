@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import { login, getMessages } from '../services/index'
-import {Link} from 'react-router-dom'
 import '../styles/Login.css'
+import {Link} from 'react-router-dom'
 
 class Login extends React.Component {
     constructor(props) {
@@ -28,7 +28,8 @@ class Login extends React.Component {
             password: this.state.password,
         }
         const resp = await login(user)
-        console.log(resp)
+        this.props.setUser(resp.data.username);
+        // console.log(resp)
     }
 
     render() {
