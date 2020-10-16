@@ -1,7 +1,11 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import { login, getMessages } from '../services/index'
+<<<<<<< HEAD
+import '../styles/Login.css'
+=======
 import {Link} from 'react-router-dom'
+>>>>>>> a4b4440c9ad2058a073c0c72a43afe45899f6a79
 
 class Login extends React.Component {
     constructor(props) {
