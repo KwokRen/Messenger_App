@@ -1,5 +1,5 @@
 .landingPage {
-    margin-top: 15%;
+    margin-top: 250px;
 }
 
 .landingMsg {
@@ -24,6 +24,8 @@ a {
     background-color: #ff7300;
     color: #fff;
     padding: 1rem 8.8rem 1rem 8.8rem;
+    padding: auto;
+
     border: none;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
@@ -41,4 +43,56 @@ a {
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 450px) {
+    #button1 {
+        padding: 1rem 6.7rem 1rem 6.7rem;
+    } 
+
+    #button2 {
+        padding: 1rem 5.5rem 1rem 5.5rem;
+    } 
+}
+
+@media (max-width: 375px) {
+    .landingMsg {
+        font-size: 19px;
+    }
+
+    #button1 {
+        padding: 1rem 4.7rem 1rem 4.7rem;
+    } 
+
+    #button2 {
+        padding: 1rem 3.5rem 1rem 3.5rem;
+    } 
+}
+
+@media (max-width: 354px) {
+    .landingMsg {
+        font-size: 20px;
+    }
+
+    #button1 {
+        padding: 1rem 4.7rem 1rem 4.7rem;
+    } 
+
+    #button2 {
+        padding: 1rem 3.5rem 1rem 3.5rem;
+    } 
+}
+
+@media (max-width: 290px) {
+    .landingMsg {
+        font-size: 15px;
+    }
+
+    #button1 {
+        padding: 1rem 2.7rem 1rem 2.7rem;
+    } 
+
+    #button2 {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    } 
 }
