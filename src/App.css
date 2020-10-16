@@ -19,7 +19,7 @@ body {
   background: #252525;
   color: white;
   height: 60px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 

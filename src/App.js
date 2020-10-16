@@ -7,7 +7,7 @@ import LogoText from './components/Logo-Text'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
 import Login from './screens/Login'
-// import Navbar from './components/Navbar'
+import Navbar from './components/Navbar'
 
 import './App.css';
 
@@ -15,13 +15,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
     }
   }
 
   render() {
     return (
       <div className="App">
+        <Navbar />
         <div className="view-container">
           <BrowserRouter>
           <div className="icon-container">
