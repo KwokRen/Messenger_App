@@ -5,6 +5,7 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import Icon from './components/Icon'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
+import Login from './screens/Login'
 
 import './App.css';
 
@@ -26,6 +27,9 @@ class App extends React.Component {
           <Switch>
             <Route path="/register">
               <Register />
+            </Route>
+            <Route path="/login">
+              <Login />
             </Route>
             <Route path="/">
               <LandingPage />
