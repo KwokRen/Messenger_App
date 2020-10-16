@@ -25,7 +25,7 @@ class Register extends React.Component {
                     <input type="email" name='email' placeholder='Create Email' value={this.state.email} onChange={this.handleChange}/>
                     <input type="password" name='password' placeholder='Create Password' value={this.state.password} onChange={this.handleChange}/>
            
-                    <Button id="button">Sign Up</Button>
+                    <Button id="register-button">Sign Up</Button>
                 </div>
             </form>
         )
