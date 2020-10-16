@@ -12,22 +12,21 @@ class NavBar extends React.Component {
         }
     }
 
-    componentDidMount = () => {
-        this.populate()
-    }
+    // componentDidMount = () => {
+    //     this.populate()
+    // }
 
-    populate = async() => {
-        console.log(localStorage.getItem('user'))
-        this.setState({
-            username: localStorage.getItem('user')
-        })
-    }
+    // populate = async() => {
+    //     this.setState({
+    //         username: 
+    //     })
+    // }
 
     render() {
         return (
             <div className="navbar">
                 <Icon />
-                <div>{this.state.username}</div>
+                <div>{this.props.user}</div>
                 <div><img src={this.state.icon} alt="test"/></div>
                 <div className="logout">Logout</div>
             </div>
