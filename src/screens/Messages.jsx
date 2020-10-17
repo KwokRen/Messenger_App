@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 class Messages extends React.Component {
     constructor(props){
@@ -12,7 +11,6 @@ class Messages extends React.Component {
     render() {
         return (
             <div>
-                {/* <Navbar /> */}
                 <h1>Logged In</h1>
             </div>
         )

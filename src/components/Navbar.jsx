@@ -3,6 +3,7 @@ import React from 'react'
 import Icon from '../components/Icon'
 import {getMessages, login} from '../services'
 import Api from '../services/apiConfig';
+import {Link, BrowserRouter, Redirect} from 'react-router-dom'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -34,7 +35,10 @@ class NavBar extends React.Component {
             <div className="navbar">
                 <Icon />
                 <div>{this.props.user}</div>
-                <div><img src={this.state.icon} alt="test"/></div>
+                <div><img src={this.state.icon} alt="profilepicture"/></div>
+                <BrowserRouter>
+                    <Link to="/userprofile">User Profile</Link>
+                </BrowserRouter>
                 <div className="logout">Logout</div>
             </div>
         )
