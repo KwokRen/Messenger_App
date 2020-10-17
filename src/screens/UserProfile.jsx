@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/UserProfile.css'
 
 class UserProfile extends Component {
     // constructor(props) {
@@ -6,7 +7,9 @@ class UserProfile extends Component {
     // }
     render() { 
         return ( 
-            <div>Hello There</div>
+            <div>
+                <h1>User Profile</h1>
+            </div>
          );
     }
 }
