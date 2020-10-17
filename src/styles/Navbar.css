@@ -7,6 +7,10 @@
     /* position: fixed; */
     width: 100%;
   }
+
+ .navbar > a {
+     cursor: initial;
+ }
   
   .navbar > a > .icon {
     display: flex;
