@@ -8,16 +8,20 @@ body {
 
 .App {
   text-align: center;
-  background-image: url(https://cloud-msg.netlify.app/img/Nightclub-Photography-4.70e2caa3.jpg);
   height: 100%;
-  background-size: cover;
 }
 
 .view-container {
   display: flex;
   /* justify-content: space-evenly; */
+  background-image: url(https://cloud-msg.netlify.app/img/Nightclub-Photography-4.70e2caa3.jpg);
+  background-size: cover;
   align-items: center;
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+
+Messages {
+  background: green;
 }

@@ -32,6 +32,12 @@
     width: 70px;
   }
 
+  .user-info {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
   .profile-picture > img {
       height: 100%;
       border-radius: 50px;
