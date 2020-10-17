@@ -7,9 +7,10 @@ import LogoText from './components/Logo-Text'
 import LandingPage from './screens/LandingPage'
 import Register from './screens/Register';
 import Login from './screens/Login'
-import Navbar from './components/Navbar'
+import NavBar from './components/Navbar'
 import Messages from './screens/Messages'
 import UserProfile from './screens/UserProfile'
+
 
 import './App.css';
 
@@ -29,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
           <BrowserRouter>
-          {this.state.username && (<Navbar user={this.state.username}/>)}
+          {this.state.username && (<NavBar user={this.state.username}/>)}
             {this.state.username && <Route path="/messages">
                 <Messages />
               </Route>}
