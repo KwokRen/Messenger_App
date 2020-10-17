@@ -11,7 +11,7 @@ class NavBar extends React.Component {
         super(props);
         this.state = {
             username: '',
-            icon: 'https://www.avisystems.com/hubfs/AVI%20Logos/AVI_logo_CMYK_WhiteRule.svg'
+            icon: 'https://i0.wp.com/postmatura.al/wp-content/uploads/2018/10/blank-profile-picture-png.png?fit=512%2C512&ssl=1'
         }
     }
 
