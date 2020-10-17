@@ -30,7 +30,13 @@ class App extends React.Component {
       <div className="App">
           <BrowserRouter>
           {this.state.username && (<Navbar user={this.state.username}/>)}
-          <div className="view-container">
+            {this.state.username && <Route path="/messages">
+                <Messages />
+              </Route>}
+              {this.state.username && <Route path="/userprofile">
+                <UserProfile />
+              </Route>}
+          {this.state.username === '' && <div className="view-container">
           <div className="icon-container">
             <Link to="/">
               <Icon />
@@ -44,17 +50,11 @@ class App extends React.Component {
               <Route path="/login">
                 <Login setUser={this.setUser} />
               </Route>
-              <Route path="/messages">
-                <Messages />
-              </Route>
-              <Route path="/userprofile">
-                <UserProfile />
-              </Route>
               <Route path="/">
                 <LandingPage />
               </Route>
             </Switch>
-          </div>
+          </div>}
         </BrowserRouter>
       </div>
     );
