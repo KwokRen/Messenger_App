@@ -1,8 +1,10 @@
 import React from 'react'
 // import Navbar from 'react-bootstrap/Navbar';
 import Icon from '../components/Icon'
-import {getMessages, login} from '../services'
+// import {getMessages, login} from '../services'
 import Api from '../services/apiConfig';
+import {Link} from 'react-router-dom'
+import '../styles/Navbar.css'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -34,8 +36,9 @@ class NavBar extends React.Component {
             <div className="navbar">
                 <Icon />
                 <div className="nav-right">
-                    <img className="userimage" src={this.state.icon} alt="test"/>
-                    <div className="username">{this.props.user}</div> 
+                    <div className="username">{this.props.user}</div>
+                    <div><img class="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
+                    <Link className="link-to-profile" to="/userprofile">User Profile</Link>
                     <div className="logout">Logout</div>
                 </div>
             </div>

@@ -9,6 +9,7 @@ import Register from './screens/Register';
 import Login from './screens/Login'
 import Navbar from './components/Navbar'
 import Messages from './screens/Messages'
+import UserProfile from './screens/UserProfile'
 
 import './App.css';
 
@@ -27,9 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.username && (<Navbar user={this.state.username}/>)}
-        <div className="view-container">
           <BrowserRouter>
+          {this.state.username && (<Navbar user={this.state.username}/>)}
+          <div className="view-container">
           <div className="icon-container">
             <Link to="/">
               <Icon />
@@ -46,12 +47,15 @@ class App extends React.Component {
               <Route path="/messages">
                 <Messages />
               </Route>
+              <Route path="/userprofile">
+                <UserProfile />
+              </Route>
               <Route path="/">
                 <LandingPage />
               </Route>
             </Switch>
-          </BrowserRouter>
-        </div>
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
