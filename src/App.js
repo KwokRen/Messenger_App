@@ -45,7 +45,7 @@ class App extends React.Component {
           </div>
             <Switch>
               <Route path="/register">
-                <Register />
+                <Register setUser={this.setUser}/>
               </Route>
               <Route path="/login">
                 <Login setUser={this.setUser} />

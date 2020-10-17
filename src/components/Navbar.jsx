@@ -23,8 +23,11 @@ class NavBar extends React.Component {
        try {
            const resp = await Api.get('cloud_msg/UserProfiles/');
            if (resp.status === 200) {
+                console.log(resp)
                 const userProfile = resp.data.results.find(UserProfile => UserProfile.user === this.props.user);
-                this.setState({icon: userProfile.avatar})
+                if (userProfile.avatar) {
+                    this.setState({icon: userProfile.avatar})
+                }
            }
        } catch (error) {
            throw error;
@@ -37,7 +40,7 @@ class NavBar extends React.Component {
                 <Link to="/messages"><Icon /></Link>
                 <div className="nav-right">
                     <div className="username">{this.props.user}</div>
-                    <div><img class="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
+                    <div><img className="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
                     <Link className="link-to-profile" to="/userprofile">User Profile</Link>
                     <div className="logout">Logout</div>
                 </div>

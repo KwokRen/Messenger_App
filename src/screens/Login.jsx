@@ -25,7 +25,7 @@ class Login extends React.Component {
     handleLogin = async () => {
         const user = { 
             username: this.state.username,
-            password: this.state.password,
+            password: this.state.password
         }
         const resp = await login(user)
         this.props.setUser(resp.data.username);
