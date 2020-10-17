@@ -17,8 +17,27 @@
     background: linear-gradient(#f70,#f30);
     cursor: pointer;
   }
+
+  .navbar > .nav-right {
+    display: flex;
+  }
+
+  .navbar > .nav-right > .profile-picture {
+    margin-right: 5px;
+  }
+
+  .profile-picture {
+    margin-top: 9px;
+    max-height: 2.5rem;
+    border-radius: 50%;
+  }
   
-  .navbar > .logout {
+  .username, .link-to-profile {
+    color: white;
+    margin-top: 1.3rem;
+  }
+
+  .navbar > .nav-right > .logout {
     display: flex;
     justify-content: center;
     align-items: center;

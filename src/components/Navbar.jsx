@@ -35,12 +35,12 @@ class NavBar extends React.Component {
         return (
             <div className="navbar">
                 <Icon />
-                <div className="user-info">
-                    <div>{this.props.user}</div>
-                    <div class="profile-picture"><img src={this.state.icon} alt="profilepicture"/></div>
+                <div className="nav-right">
+                    <div className="username">{this.props.user}</div>
+                    <div><img class="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
+                    <Link className="link-to-profile" to="/userprofile">User Profile</Link>
+                    <div className="logout">Logout</div>
                 </div>
-                <Link to="/userprofile">User Profile</Link>
-                <div className="logout">Logout</div>
             </div>
         )
     }
