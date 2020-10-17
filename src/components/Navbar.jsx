@@ -5,6 +5,8 @@ import Icon from '../components/Icon'
 import Api from '../services/apiConfig';
 import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
+import {Navbar, Nav} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -36,15 +38,21 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <div className="navbar">
-                <Link to="/messages"><Icon /></Link>
-                <div className="nav-right">
-                    <div className="username">{this.props.user}</div>
-                    <div><img className="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
-                    <Link className="link-to-profile" to="/userprofile">User Profile</Link>
-                    <div className="logout">Logout</div>
-                </div>
-            </div>
+        <div>
+            <Navbar bg="dark" expand="lg">  
+                <Navbar.Brand id="cloud-icon" href="/messages"><Icon /></Navbar.Brand>
+                <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                    {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}
+                    <div id="username">{this.props.user}</div>
+                    <Nav.Link id="link-to-profile" to="/userprofile" variant="light">Profile</Nav.Link>
+                    <Nav.Link id="logout" variant="light">Logout</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </div>
         )
     }
 }

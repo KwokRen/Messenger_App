@@ -3,7 +3,7 @@
     justify-content: space-between;
     background: #252525;
     color: white;
-    height: 60px;
+    /* height: 60px;  */
     /* position: fixed; */
     width: 100%;
   }
@@ -12,6 +12,9 @@
      cursor: initial;
  }
   
+  #cloud-icon {
+    margin-right: -1rem;
+  }
   .navbar > a > .icon {
     display: flex;
     justify-content: center;
@@ -21,32 +24,37 @@
     background: linear-gradient(#f70,#f30);
     cursor: pointer;
   }
-
-  .navbar > .nav-right {
-    display: flex;
-  }
-
-  .navbar > .nav-right > .profile-picture {
-    margin-right: 5px;
-  }
-
-  .profile-picture {
-    margin-top: 9px;
+ 
+  #profile-picture {
+    margin: 5px 5px 5px 0px;
     max-height: 2.5rem;
     border-radius: 50%;
   }
   
-  .username, .link-to-profile {
+  #username {
     color: white;
-    margin-top: 1.3rem;
+    /* margin-top: 10px;
+    margin-left: 45px;
+    margin-right: */
+    margin: 10px 20px 0 30px;
   }
 
-  .navbar > .nav-right > .logout {
+  #link-to-profile {
+    color: white;
+    width: auto;
+    margin: 3px 20px 0 30px;
+    /* margin-top: 3px;
+    margin-left: 45px; */
+  }
+
+ #logout {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: auto;
+    margin-left: 15px;
     cursor: pointer;
+    color: white;
   }
   
   .navbar > a > .icon > .svg-inline--fa {
@@ -55,13 +63,7 @@
     width: 70px;
   }
 
-  .user-info {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-  }
-
-  .profile-picture > img {
+  #profile-picture > img {
       height: 100%;
       border-radius: 50px;
-  }
+  } 
