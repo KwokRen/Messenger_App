@@ -28,9 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.username && (<Navbar user={this.state.username}/>)}
-        <div className="view-container">
           <BrowserRouter>
+          {this.state.username && (<Navbar user={this.state.username}/>)}
+          <div className="view-container">
           <div className="icon-container">
             <Link to="/">
               <Icon />
@@ -54,8 +54,8 @@ class App extends React.Component {
                 <LandingPage />
               </Route>
             </Switch>
-          </BrowserRouter>
-        </div>
+          </div>
+        </BrowserRouter>
       </div>
     );
   }

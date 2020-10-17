@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
-import { login, getMessages } from '../services/index'
+import { login } from '../services/index'
 import '../styles/Login.css'
 import {Link} from 'react-router-dom'
 

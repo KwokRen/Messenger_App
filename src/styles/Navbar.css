@@ -31,3 +31,8 @@
     height: 70%;
     width: 70px;
   }
+
+  .profile-picture > img {
+      height: 100%;
+      border-radius: 50px;
+  }

@@ -1,9 +1,9 @@
 import React from 'react'
 // import Navbar from 'react-bootstrap/Navbar';
 import Icon from '../components/Icon'
-import {getMessages, login} from '../services'
+// import {getMessages, login} from '../services'
 import Api from '../services/apiConfig';
-import {Link, BrowserRouter, Switch} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
 
 class NavBar extends React.Component {
@@ -36,12 +36,8 @@ class NavBar extends React.Component {
             <div className="navbar">
                 <Icon />
                 <div>{this.props.user}</div>
-                <div><img src={this.state.icon} alt="profilepicture"/></div>
-                <BrowserRouter>
-                    <Switch>
-                        <Link to="/userprofile">User Profile</Link>
-                    </Switch>
-                </BrowserRouter>
+                <div class="profile-picture"><img src={this.state.icon} alt="profilepicture"/></div>
+                <Link to="/userprofile">User Profile</Link>
                 <div className="logout">Logout</div>
             </div>
         )
