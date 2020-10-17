@@ -8,7 +8,7 @@
     width: 100%;
   }
   
-  .navbar > .icon {
+  .navbar > a > .icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
     cursor: pointer;
   }
   
-  .navbar > .icon > .svg-inline--fa {
+  .navbar > a > .icon > .svg-inline--fa {
     padding-top: 0px;
     height: 70%;
     width: 70px;

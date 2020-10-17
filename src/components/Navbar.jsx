@@ -34,7 +34,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <Icon />
+                <Link to="/messages"><Icon /></Link>
                 <div className="nav-right">
                     <div className="username">{this.props.user}</div>
                     <div><img class="profile-picture" src={this.state.icon} alt="profilepicture"/></div>
