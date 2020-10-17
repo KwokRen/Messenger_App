@@ -44,7 +44,7 @@ class NavBar extends React.Component {
                     <Nav className="mr-auto">
                     {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}
                     <div id="username">{this.props.user}</div>
-                    <Nav.Link id="link-to-profile" to="/userprofile" variant="light">User Profile</Nav.Link>
+                    <Nav.Link id="link-to-profile" to="/userprofile" variant="light">Profile</Nav.Link>
                     <Nav.Link id="logout" variant="light">Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
