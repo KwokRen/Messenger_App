@@ -13,40 +13,6 @@ body {
   background-size: cover;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background: #252525;
-  color: white;
-  height: 60px;
-  /* position: fixed; */
-  width: 100%;
-}
-
-.navbar > .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 80px;
-  background: linear-gradient(#f70,#f30);
-  cursor: pointer;
-}
-
-.navbar > .logout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  cursor: pointer;
-}
-
-.navbar > .icon > .svg-inline--fa {
-  padding-top: 0px;
-  height: 70%;
-  width: 70px;
-}
-
 .view-container {
   display: flex;
   /* justify-content: space-evenly; */

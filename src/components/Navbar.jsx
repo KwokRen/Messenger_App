@@ -3,7 +3,8 @@ import React from 'react'
 import Icon from '../components/Icon'
 import {getMessages, login} from '../services'
 import Api from '../services/apiConfig';
-import {Link, BrowserRouter, Redirect} from 'react-router-dom'
+import {Link, BrowserRouter, Switch} from 'react-router-dom'
+import '../styles/Navbar.css'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -37,7 +38,9 @@ class NavBar extends React.Component {
                 <div>{this.props.user}</div>
                 <div><img src={this.state.icon} alt="profilepicture"/></div>
                 <BrowserRouter>
-                    <Link to="/userprofile">User Profile</Link>
+                    <Switch>
+                        <Link to="/userprofile">User Profile</Link>
+                    </Switch>
                 </BrowserRouter>
                 <div className="logout">Logout</div>
             </div>
