@@ -32,7 +32,7 @@ class App extends React.Component {
           <BrowserRouter>
           {this.state.username && (<NavBar user={this.state.username}/>)}
             {this.state.username && <Route path="/messages">
-                <Messages />
+                <Messages setUser={this.setUser} user={this.state.username}/>
               </Route>}
               {this.state.username && <Route path="/userprofile">
                 <UserProfile />
