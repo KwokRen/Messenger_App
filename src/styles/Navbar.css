@@ -63,7 +63,7 @@
   }
   
   .navbar > a > .icon > .svg-inline--fa {
-    padding-top: 0px;
+    padding: 0.5rem;
     height: 70%;
     width: 70px;
   }
