@@ -29,7 +29,6 @@ class Login extends React.Component {
         }
         const resp = await login(user)
         this.props.setUser(resp.data.username);
-        // console.log(resp)
     }
 
     render() {

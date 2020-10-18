@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
 import {Navbar, Nav} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { logout } from '../services/index'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -36,6 +37,15 @@ class NavBar extends React.Component {
        }
     }
 
+    handleLogout = async () => {
+        this.setState({
+            username: '',
+            password: ''
+        })
+        logout();
+        window.location.reload(false);
+    }
+
     render() {
         return (
         <div>
@@ -50,7 +60,9 @@ class NavBar extends React.Component {
                     <Link to="/userprofile" id="link-to-profile">
                         <Nav variant="light">Profile</Nav>
                     </Link>
-                    <Nav id="logout" variant="light">Logout</Nav>
+                    <Link to="/">
+                        <Nav id="logout" variant="light" onClick={this.handleLogout}>Logout</Nav>
+                    </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
