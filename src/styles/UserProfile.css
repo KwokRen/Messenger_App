@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+#contained-modal-title-vcenter {
+    font-family: Overpass;
+    font-weight: 300;
+    font-size:28px;
+}
+
+.modal-body {
+
+    padding:0px;
+}
+
+.modal-header {
+    background-color:rgb(241, 241, 241);
+    padding-bottom:70px;
+}
+
+.input-group {
+    margin:18px;
+
+}
+
+
+.input-group-text {
+    background-color:white;
+    font-family: Overpass;
+    font-weight: 300;
+    font-size:12px;
+    border:0px;
+    border-radius:0px;
+}
+
+.form-control {
+    font-size:14px;
+    border-radius:0px;
+    border:0px;
+    margin-right:20px;
+}
+
+.section {
+    border-bottom:1px solid lightgrey;
+    
+    
+}
+
+#basic-addon2 {
+    padding-right:33px;
+}
+
+.modal-footer {
+    background-color:rgb(241, 241, 241);
+    justify-content: center;
+    padding: 20px 0px;
+
+}
+
+#delete-footer {
+    border-top:0px;
+    justify-content: center;
+}
+
+#delete-account {
+    background-color: orangered;
+    border:0px;
+    font-family: Overpass;
+    font-weight: 300;
+    font-size:16px;
+    width:90%;
+}
+
+#save-changes {
+    background-color: rgb(59, 59, 59);
+    border:0px;
+    font-family: Overpass;
+    font-weight: 300;
+    font-size:16px;
+    width:90%;
+    padding:10px 0px;
+}
+
+
+
