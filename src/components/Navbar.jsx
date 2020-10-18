@@ -44,8 +44,9 @@ class NavBar extends React.Component {
                     <div className="user">
                         <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>
                         <div id="username">{this.props.user}</div>
-                    </div>
+                    
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    </div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                         {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}

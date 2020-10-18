@@ -27,7 +27,6 @@
   }
 
   .user {
-    margin-right: 1rem;
     display: flex;
   }
   
@@ -40,6 +39,7 @@
   .user > #username {
     margin-top: 0.4rem;
     margin-left: 0.5rem;
+    margin-right: 0.5rem;
     color: white;
   }
   
