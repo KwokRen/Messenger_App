@@ -38,16 +38,19 @@ class NavBar extends React.Component {
         <div>
             <Navbar bg="dark" expand="lg">  
                 <Navbar.Brand id="cloud-icon" href="/messages"><Icon /></Navbar.Brand>
-                <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                    {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}
-                    <div id="username">{this.props.user}</div>
-                    <Nav.Link id="link-to-profile" to="/userprofile" variant="light">Profile</Nav.Link>
-                    <Nav.Link id="logout" variant="light">Logout</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+                    <div className="user">
+                        <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>
+                        <div id="username">{this.props.user}</div>
+                    </div>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                        {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}
+                        {/* <div id="username">{this.props.user}</div> */}
+                        <Nav.Link id="link-to-profile" to="/userprofile" variant="light">Profile</Nav.Link>
+                        <Nav.Link id="logout" variant="light">Logout</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
             </Navbar>
         </div>
         )

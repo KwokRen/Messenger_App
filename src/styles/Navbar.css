@@ -9,8 +9,9 @@
   }
   
   #cloud-icon {
-    margin-right: -1rem;
+    margin-right: -4rem;
   }
+
   .navbar > a > .icon {
     display: flex;
     justify-content: center;
@@ -20,20 +21,24 @@
     background: linear-gradient(#f70,#f30);
     cursor: pointer;
   }
- 
-  #profile-picture {
-    margin: 5px 5px 5px 0px;
+
+  .user {
+    margin-right: 1rem;
+    display: flex;
+  }
+  
+  .user > #profile-picture {
+    /* margin: 5px 5px 5px 0px; */
     max-height: 2.5rem;
     border-radius: 50%;
   }
-  
-  #username {
+
+  .user > #username {
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
     color: white;
-    /* margin-top: 10px;
-    margin-left: 45px;
-    margin-right: */
-    margin: 10px 20px 0 30px;
   }
+  
 
   #link-to-profile {
     color: white;
