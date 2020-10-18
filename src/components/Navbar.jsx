@@ -9,6 +9,7 @@ import {Navbar, Nav} from 'react-bootstrap';
 import {Button, ButtonToolbar} from 'react-bootstrap';
 import UserProfileModal from '../components/UserProfileModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { logout } from '../services/index'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -39,6 +40,15 @@ class NavBar extends React.Component {
        }
     }
 
+    handleLogout = async () => {
+        this.setState({
+            username: '',
+            password: ''
+        })
+        logout();
+        window.location.reload(false);
+    }
+
     render() {
 
     let addModalClose =() => this.setState({addModalShow:false});
@@ -62,10 +72,9 @@ class NavBar extends React.Component {
                     <UserProfileModal
                     show={this.state.addModalShow}
                     onHide={addModalClose}/>
-                    {/* <Link to="/userprofile" id="link-to-profile">
-                        <Nav variant="light">Profile</Nav>
-                    </Link> */}
-                    <Nav id="logout" variant="light">Logout</Nav>
+                    <Link to="/">
+                        <Nav id="logout" variant="light" onClick={this.handleLogout}>Logout</Nav>
+                    </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
