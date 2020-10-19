@@ -72,8 +72,8 @@ class NavBar extends React.Component {
                     <UserProfileModal
                     show={this.state.addModalShow}
                     onHide={addModalClose}/>
-                    <Link to="/">
-                        <Nav id="logout" variant="light" onClick={this.handleLogout}>Logout</Nav>
+                    <Link to="/" id="logout">
+                        <Nav variant="light" onClick={this.handleLogout}>Logout</Nav>
                     </Link>
                     </Nav>
                 </Navbar.Collapse>

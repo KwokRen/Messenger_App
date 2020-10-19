@@ -91,6 +91,12 @@
       border-radius: 50px;
   } 
 
+  .navbar-nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and (min-width: 992px) {
 
     .navbar-expand-lg .navbar-nav {
