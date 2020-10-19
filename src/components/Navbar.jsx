@@ -29,7 +29,7 @@ class NavBar extends React.Component {
        try {
            const resp = await Api.get('cloud_msg/UserProfiles/');
            if (resp.status === 200) {
-                console.log(resp)
+                // console.log(resp)
                 const userProfile = resp.data.results.find(UserProfile => UserProfile.user === this.props.user);
                 if (userProfile.avatar) {
                     this.setState({icon: userProfile.avatar})
