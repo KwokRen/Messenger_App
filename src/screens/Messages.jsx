@@ -29,8 +29,14 @@ class Messages extends React.Component {
 
     render() {
         const {messages} = this.state;
-        console.log(this.state.messages)
-        console.log(this.state.messages.id)
+        // console.log(this.state.messages)
+        // console.log(this.state.messages.id)
+        const textpreviews = messages.map(message => <TextPreview 
+            key={message.id}
+            messages={message.message}
+            sender={message.sender_name}
+            avatar={message.sender_avatar}
+            />)
         return (
             <div className="message">
                 {/* <h1>Messages</h1> */}
@@ -38,13 +44,13 @@ class Messages extends React.Component {
                     <div className="message-list-container">
                         <div>
                             <ul>
-
-                                {messages.map(message => <TextPreview 
+                                {textpreviews}
+                                {/* {messages.map(message => <TextPreview 
                                 key={message.id}
                                 messages={message.message}
                                 sender={message.sender_name}
                                 avatar={message.sender_avatar}
-                                />)}
+                                />)} */}
 
                                 {/* <TextPreview messages={this.state.messages}/> */}
                                 {/* {messages.map(message => <li>{message.message}</li>)} */}
