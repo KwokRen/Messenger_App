@@ -54,3 +54,21 @@ export const getMessages = async () => {
        throw error;
    }
 }
+
+export const updateProfile = async (userProfileData, profileID) => {
+    try {
+        const resp = await Api.put(`cloud_msg/UserProfiles/${profileID}/`, userProfileData);
+        return resp;
+    } catch (error) {
+        throw error;
+    }
+ }
+
+ export const deleteUser= async (userID) => {
+    try {
+        const resp = await Api.delete(`auth/users/user/`);
+        return resp;
+    } catch (error) {
+        throw error;
+    }
+ }

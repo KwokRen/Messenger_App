@@ -70,7 +70,12 @@ class NavBar extends React.Component {
                     </ButtonToolbar>
 
                     <UserProfileModal
+                    user={this.props.username} 
+                    profileID={this.props.profileID} 
+                    userID={this.props.userID}
                     show={this.state.addModalShow}
+                    refresh={this.getUserProfile}
+                    logout={this.handleLogout}
                     onHide={addModalClose}/>
                     <Link to="/" id="logout">
                         <Nav variant="light" onClick={this.handleLogout}>Logout</Nav>
