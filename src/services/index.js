@@ -49,7 +49,8 @@ export const logout = async () => {
 export const getMessages = async () => {
    try {
        const resp = await Api.get('cloud_msg/messages/');
-    //    console.log(resp);
+       console.log(resp);
+        this.setState({messages: resp})
        return resp;
    } catch (error) {
        throw error;
