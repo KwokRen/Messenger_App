@@ -19,19 +19,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: ''
+      username: '',
+      userID: '',
+      profileID: ''
     }
   }
 
-  setUser = (username) => {
-    this.setState({username: username})
+  setUser = (username, userID, profileID) => {
+    this.setState({username: username, userID: userID, profileID: profileID})
+
   }
 
   render() {
     return (
       <div className="App">
           <BrowserRouter>
-          {this.state.username && (<NavBar user={this.state.username}/>)}
+          {this.state.username && (<NavBar user={this.state.username} profileID={this.state.profileID} userID={this.state.userID}/>)}
             {this.state.username && <Route path="/messages">
                 <Messages setUser={this.setUser} user={this.state.username}/>
               </Route>}
