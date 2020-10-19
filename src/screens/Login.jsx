@@ -28,7 +28,8 @@ class Login extends React.Component {
             password: this.state.password
         }
         const resp = await login(user)
-        this.props.setUser(resp.data.username);
+        console.log(resp.data)
+        this.props.setUser(resp.data.username, resp.data.id, resp.data.profile);
     }
 
     render() {
