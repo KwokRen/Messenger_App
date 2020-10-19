@@ -56,12 +56,13 @@ class NavBar extends React.Component {
         <div>
             <Navbar bg="dark" expand="lg">  
                 <Navbar.Brand id="cloud-icon" href="/messages"><Icon /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <div className="user">
                     <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>
-                    <Nav className="mr-auto">
-                    {/* <img id="profile-picture" src={this.state.icon} alt="profilepicture"/>     */}
                     <div id="username">{this.props.user}</div>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                </div>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
                     <ButtonToolbar id="user-profile">
                         <Button  id="user-profile-button"
                         onClick= {()=> this.setState({addModalShow: true})}>
