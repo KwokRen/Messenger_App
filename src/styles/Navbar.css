@@ -1,74 +1,93 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background: #252525;
-    color: white;
-    /* height: 60px;  */
-    /* position: fixed; */
-    width: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+  background: #252525;
+  color: white;
+  /* height: 60px;  */
+  /* position: fixed; */
+  width: 100%;
+}
 
- .navbar > a {
-     cursor: initial;
- }
-  
-  #cloud-icon {
-    margin-right: -4rem;
-  }
+.navbar > a {
+   cursor: initial;
+}
 
-  .navbar > a > .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cloud-icon {
+  margin-right: -4rem;
+}
+
+.navbar > a > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80px;
+  background: linear-gradient(#f70,#f30);
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+}
+
+.user > #profile-picture {
+  /* margin: 5px 5px 5px 0px; */
+  max-height: 2.5rem;
+  border-radius: 50%;
+}
+
+.user > #username {
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+}
+
+#user-profile {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#user-profile-button {
+  background-image: linear-gradient(rgb(243, 113, 0), rgb(236, 47, 0));
+  border:0px;
+}
+
+#link-to-profile {
+  color: white;
+  width: auto;
+  margin: 3px 20px 0 30px;
+  /* margin-top: 3px;
+  margin-left: 45px; */
+}
+
+#logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-left: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar > a > .icon > .svg-inline--fa {
+  padding-top: 0px;
+  height: 70%;
+  width: 70px;
+}
+
+#profile-picture > img {
     height: 100%;
-    width: 80px;
-    background: linear-gradient(#f70,#f30);
-    cursor: pointer;
+    border-radius: 50px;
+} 
+
+@media screen and (min-width: 992px) {
+
+  .navbar-expand-lg .navbar-nav {
+    justify-content: space-between;
+    width: 70%;
   }
 
-  .user {
-    display: flex;
-  }
-  
-  .user > #profile-picture {
-    /* margin: 5px 5px 5px 0px; */
-    max-height: 2.5rem;
-    border-radius: 50%;
-  }
-
-  .user > #username {
-    margin-top: 0.4rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    color: white;
-  }
-  
-
-  #link-to-profile {
-    color: white;
-    width: auto;
-    margin: 3px 20px 0 30px;
-    /* margin-top: 3px;
-    margin-left: 45px; */
-  }
-
- #logout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    margin-left: 15px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .navbar > a > .icon > .svg-inline--fa {
-    padding-top: 0px;
-    height: 70%;
-    width: 70px;
-  }
-
-  #profile-picture > img {
-      height: 100%;
-      border-radius: 50px;
-  } 
+}

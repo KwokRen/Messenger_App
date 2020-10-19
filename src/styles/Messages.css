@@ -1,0 +1,51 @@
+.message {
+    height: 93%;
+}
+
+.message-container {
+    display: flex;
+    height: 100%;
+}
+
+.message-container > div:nth-child(1) {
+    width: 30%;
+    border-right: 1px solid  rgba(0, 0, 0, .2);
+}
+
+.message-container > div:nth-child(2) {
+    width: 70%;
+    height: 100%;
+}
+
+.message-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.one-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form-group {
+    margin-bottom: 0rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    /* border-top: 1px solid black; */
+}
+
+.form-control {
+    width: 95%;
+}
+
+textarea {
+    resize: none;
+    border: none !important;
+    background-color: rgba(0, 0, 0, .05) !important;
+    height: calc(1.5em + .75rem + 2px) !important;
+    border-radius: 5rem !important;
+    /* color: black !important; */
+    /* border: 1px solid black !important; */
+}

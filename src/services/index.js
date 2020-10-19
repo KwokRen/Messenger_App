@@ -35,6 +35,17 @@ export const login = async (userData) => {
     }
 }
 
+export const logout = async () => {
+    try {
+        if (localStorage.getItem('token')) {
+            await clearHeader();
+            window.localStorage.removeItem('token');
+        }
+    } catch (error) {
+        throw error
+    }
+}
+
 export const getMessages = async () => {
    try {
        const resp = await Api.get('cloud_msg/messages/');
