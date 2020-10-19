@@ -3,18 +3,17 @@ import React from 'react'
 class TextPreview extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            username: '',
-            password: ''
-        }
     }
 
 
 
     render() {
+        console.log(this.props.messages)
         return(
-            <div className="icon">
-                <h1>CLOUD MSG</h1>
+            <div>
+                {this.props.messages}
+                {this.props.sender}
+                {this.props.avatar}
             </div>
         )
     }
